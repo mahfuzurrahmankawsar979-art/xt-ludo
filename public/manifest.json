@@ -1,0 +1,26 @@
+{
+  "id": "/",
+  "name": "XT LUDO — Offline Android Game",
+  "short_name": "XT LUDO",
+  "description": "An offline multiplayer Ludo board game for Android with classic rules, AI bots, statistics, theme styles, and tactical secret dice controls.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#06102B",
+  "theme_color": "#06102B",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

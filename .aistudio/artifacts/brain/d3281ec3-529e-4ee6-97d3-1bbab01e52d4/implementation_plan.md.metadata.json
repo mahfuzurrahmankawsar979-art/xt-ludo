@@ -1,0 +1,6 @@
+{
+  "summary":  "Comprehensive implementation plan for XT LUDO: an offline Android Ludo game matching the reference screenshot design with 2-4 players, offline AI bots, authentic board geometry, token movement/capture rules, themes, synthesized Web Audio, Save & Resume, statistics, secret 6-zone dice control system, and PWA/APK installability.",
+  "updatedAt":  "2026-11-01T23:11:57.539224619Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}

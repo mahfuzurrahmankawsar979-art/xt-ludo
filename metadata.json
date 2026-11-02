@@ -1,0 +1,6 @@
+{
+  "name": "XT LUDO — Offline Android Game",
+  "description": "An offline multiplayer Ludo board game for Android with classic rules, AI bots, statistics, theme styles, and tactical secret dice controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,15 @@
+{
+  "appId": "com.xtludo.game",
+  "appName": "XT LUDO",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "buildOptions": {
+      "keystorePath": "",
+      "keystorePassword": ""
+    }
+  }
+}

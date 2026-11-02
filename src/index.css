@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  }
+
+  body {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    touch-action: manipulation;
+  }
+}
+
+/* Background geometric pattern like the reference screenshot */
+.bg-ludo-pattern {
+  background-color: #06102B;
+  background-image: 
+    radial-gradient(circle at 50% 20%, rgba(20, 50, 120, 0.4) 0%, transparent 60%),
+    radial-gradient(circle at 10% 80%, rgba(15, 35, 90, 0.5) 0%, transparent 50%),
+    radial-gradient(circle at 90% 70%, rgba(25, 60, 140, 0.4) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Subtle floating rounded squircle tiles on background */
+.ambient-squircle {
+  position: absolute;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+  pointer-events: none;
+}
+
+/* Gold button & board metallic styling */
+.gold-board-border {
+  box-shadow: 
+    0 12px 36px rgba(0, 0, 0, 0.6),
+    0 0 0 4px #D4881E,
+    0 0 0 8px #FFDF00,
+    0 0 0 10px #8E5A10;
+}
+
+.gold-badge-border {
+  box-shadow: 0 0 0 2px #E5A93C, 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.glow-active-turn {
+  box-shadow: 0 0 20px 4px rgba(255, 223, 0, 0.7), 0 0 0 3px #FFDF00;
+  animation: turnPulse 1.8s infinite alternate ease-in-out;
+}
+
+@keyframes turnPulse {
+  0% {
+    box-shadow: 0 0 14px 2px rgba(255, 223, 0, 0.5), 0 0 0 2px #FFDF00;
+  }
+  100% {
+    box-shadow: 0 0 26px 6px rgba(255, 223, 0, 0.9), 0 0 0 4px #FFF275;
+  }
+}
+
+/* Token hover and bounce animation when selectable */
+@keyframes tokenBounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.15);
+  }
+}
+
+.token-bounce {
+  animation: tokenBounce 0.9s infinite ease-in-out;
+}
+
+/* Dice roll shake */
+@keyframes diceShake {
+  0% { transform: rotate(0deg) scale(1); }
+  20% { transform: rotate(-18deg) scale(1.1); }
+  40% { transform: rotate(18deg) scale(1.1); }
+  60% { transform: rotate(-12deg) scale(1.08); }
+  80% { transform: rotate(12deg) scale(1.05); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+.dice-rolling {
+  animation: diceShake 0.45s ease-in-out infinite;
+}
